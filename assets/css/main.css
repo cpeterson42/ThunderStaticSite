@@ -738,7 +738,7 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
-		#mainmenu li {
+		.mainmenu li {
 			padding-left: 0.5em;
 			width: 10em;
 		}
@@ -1506,6 +1506,147 @@ input, select, textarea {
 
 		}
 
+/* Getting Started */
+#starting {
+	width: 20rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center; /* For horizontal centering */
+	align-items: center;     /* For vertical centering */
+	width: 100%          /* Assuming you want to center it within the viewport height, adjust as necessary */
+}
+
+	#starting
+	 nav ul {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+		border: solid 1px #ffffff;
+		border-radius: 4px;
+	}
+
+		#starting
+		 nav ul li {
+			padding-left: 0;
+			border-left: solid 1px #ffffff;
+			width: 15rem;
+		}
+
+			#starting
+			 nav ul li:first-child {
+				border-left: 0;
+			}
+
+			#starting
+			 nav ul li a {
+				display: block;
+				min-width: 7.5rem;
+				height: 2.75rem;
+				line-height: 2.75rem;
+				padding: 0 1.25rem 0 1.45rem;
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				font-size: 0.8rem;
+				border-bottom: 0;
+			}
+
+				#starting
+				 nav ul li a:hover {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				#starting
+				 nav ul li a:active {
+					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+	#starting
+	 nav.use-middle:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 1px);
+		width: 1px;
+		height: 100%;
+		background: #ffffff;
+	}
+
+
+	@media screen and (max-width: 980px) {
+
+		#starting
+		 .content p br {
+			display: none;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#starting
+		 > * {
+			margin-top: 2rem;
+		}
+
+			#starting
+			 > *:before {
+				top: calc(-2rem - 1px);
+				height: calc(2rem + 1px);
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#starting
+		 {
+			padding: 1.5rem 0;
+		}
+
+
+			#starting
+			 nav ul {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				min-width: 10rem;
+				max-width: 100%;
+			}
+
+				#starting
+				 nav ul li {
+					border-left: 0;
+					border-top: solid 1px #ffffff;
+				}
+
+					#starting
+					 nav ul li:first-child {
+						border-top: 0;
+					}
+
+					#starting
+					 nav ul li a {
+						height: 3rem;
+						line-height: 3rem;
+						min-width: 0;
+						width: 100%;
+					}
+
+			#starting
+			 nav.use-middle:after {
+				display: none;
+			}
+
+	}
+
+
 /* Main */
 
 	#main {
@@ -1554,6 +1695,19 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+		}
+
+
+		#main #whitepaper {
+			width: 60rem;
+		}
+
+		#main #starting-hosts {
+			width: 60rem;
+		}
+
+		#main #starting-users {
+			width: 60rem;
 		}
 
 			#main article.active {
