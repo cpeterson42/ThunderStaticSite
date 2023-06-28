@@ -1702,7 +1702,7 @@ input, select, textarea {
 			width: 70rem;
 		}
 
-		object {
+		embed {
 			height: 70vh;
 			width: 100%;
 		}
