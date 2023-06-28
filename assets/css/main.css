@@ -1699,7 +1699,12 @@ input, select, textarea {
 
 
 		#main #whitepaper {
-			width: 60rem;
+			width: 70rem;
+		}
+
+		iframe {
+			height: 70vh;
+			width: 100%;
 		}
 
 		#main #starting-hosts {
